@@ -1,0 +1,154 @@
+.footer {
+	background-color: #F3F3F3;
+}
+
+.footer__body {
+	display: flex;
+	padding-top: 100px;
+	flex-wrap: wrap;
+	row-gap: 52px;
+}
+
+.footer__logo {
+	font-size: 28px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+	transition: transform 0.2s ease-in-out;
+}
+
+.footer__logo:hover {
+	transform: scale(1.02);
+}
+
+.footer__logo img {
+	width: 46px;
+	margin-right: 6px;
+}
+
+.footer__main {
+	max-width: 270px;
+	margin-right: 30px;
+}
+
+.footer__text {
+	font-size: 16px;
+	color: #666;
+	font-weight: 500;
+	line-height: 1.6;
+}
+
+.footer__social {
+	display: flex;
+	align-items: center;
+	margin-top: 25px;
+	column-gap: 22px;
+}
+
+.footer__link {
+	transition: all 0.2s ease-in-out;
+}
+
+.footer__link img {
+	width: 16px;
+}
+
+.footer__link:hover {
+	transform: scale(1.1);
+}
+
+.first--link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #F25822;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.footer-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.col-name {
+	font-size: 24px;
+	line-height: 160%;
+	font-weight: 700;
+	margin-bottom: 30px;
+	margin-top: 6px;
+}
+
+.col-list {
+	padding-left: 15px;
+	list-style: disc !important;
+}
+
+.col-list li {
+	color: #F25822;
+}
+
+.col-list__link {
+	position: relative;
+	font-size: 16px;
+	line-height: 230%;
+	font-weight: 600;
+	color: #666;
+	transition: color 0.2s ease-in-out;
+}
+
+.col-list__link:hover {
+	color: #F25822;
+}
+
+.col-contact {
+	margin-right: 52px;
+}
+
+.col-company {
+	width: 156px;
+	margin-right: auto;
+}
+
+.col-services {
+	width: 153px;
+	margin-right: auto;
+}
+
+.contact__list {
+	list-style: none;
+	max-width: 219px;
+}
+
+.contact__list li {
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.5;
+	color: #666;
+	transition: color 0.2s ease-in-out;
+}
+
+.contact__list li:hover {
+	color: #F25822;
+	cursor: default;
+}
+
+.contact__list li span {
+	color: #333;
+}
+
+.footer__copyright {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 17px 0;
+	color: #888;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 2.3;
+	border-top: 1px solid #ccc;
+}
