@@ -1,1 +1,1 @@
-#Go here [GrowBe](https://victtorytree.github.io/GrowBe/)
+#Go to [GrowBe](https://victtorytree.github.io/GrowBe/)
