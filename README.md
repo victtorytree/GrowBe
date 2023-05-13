@@ -1,2 +1,1 @@
-[GrowBe](https://victtorytree.github.io/GrowBe/)
-Marketing&amp; SEO Optimization agency site
+Go to [GrowBe](https://victtorytree.github.io/GrowBe/)
