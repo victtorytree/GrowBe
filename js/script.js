@@ -1,8 +1,10 @@
-$( ".menu-button" ).click(function() {
-    $('.navigation__list').toggleClass( "menu_active" );
-  });
-
 $(document).ready(function(){
+    // Menu
+  $( ".menu-button" ).click(function() {
+  $('.navigation__list').toggleClass( "menu_active" );
+    });
+    
+    // Carousel
   $(".s-clients__row").owlCarousel( {
     loop: true,
     smartSpeed: 700,
@@ -14,7 +16,7 @@ $(document).ready(function(){
             items:1
         },
         600:{
-            items:2,
+            items:2
         },
         1000:{
             items:3.2
