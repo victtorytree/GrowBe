@@ -24,21 +24,6 @@
 	.schedule__week, .schedule__timezone .custom-select-opener {
 		font-size: 16px;
 	}
-	.tutor__trial_small {
-		width: 100%;
-		grid-template-columns: auto;
-	}
-	.tutor__trial_small :nth-child(2n) {
-		order: 1;
-	}
-	.tutor__trial_small .bottom-icons {
-		grid-column: span 2;
-		order: 2;
-		margin-left: auto;
-	}
-	.tutor__video_small {
-		max-height: unset;
-	}
 }
 
 @media (max-width: 992px) {
