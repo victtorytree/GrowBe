@@ -367,7 +367,15 @@
 	.s-plans__btn {
 		padding: 3px 30px;
 	}
+	.expert {
+		width: 90%;
+	}
+	.expert__link {
+		transform: scale(1.5);
+		margin-right: 10px;
+	}
 }	
+
 
 @media (max-width: 420px) {
 	.container {
@@ -387,9 +395,6 @@
 	}
 	.s-text {
 		font-size: 13px;
-	}
-	.expert {
-		width: 80%;
 	}
 	.news__info {
 		font-size: 13px;
