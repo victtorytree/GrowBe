@@ -3,13 +3,14 @@ document.querySelector('.options').onclick = function(event) {
 	target.classList.toggle('options__item--active');
 }
 
-const header = document.querySelector(".top");
-const btns = header.childNodes;
-for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  let current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
+const header = document.querySelectorAll(".tutor_right .top");
+for (let i = 0; i < header.length; i++) {
+  header[i].addEventListener("click", function(event) {
+      let active = header[i].querySelector(".active");
+      if(active) {
+        active.classList.remove("active")
+      };
+      event.target.classList.add("active");
   });
 };
 
