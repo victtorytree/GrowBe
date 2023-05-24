@@ -65,6 +65,10 @@
 .header__link:hover::before {
   opacity: 0.9;
 }
+.header__link--accent {
+  color: #FF922F;
+}
+
 .header__button {
   display: inline-block;
   width: 100%;
