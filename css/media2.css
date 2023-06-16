@@ -22,17 +22,30 @@
 		grid-template-columns: repeat(3, 1fr);
 	}
 	.tutor_left {
-		flex-basis: 60%;
+		flex-basis: 50%;
 	}
 	.tutor_row {
 		padding: 0 20px;
-		column-gap: 10px;
+		column-gap: 30px;
 	}
 	.tutor_name {
 		line-height: 1.2;
 	}
 	.tutor_occupation {
 		font-size: 14px;
+	}
+}
+
+@media (max-width: 768px) {
+	.tutor_row {
+		flex-wrap: wrap;
+		row-gap: 20px;
+	}
+	.tutor_left, .tutor_right {
+		flex-basis: 65%;
+	}
+	.tutor_image {
+		max-height: 100%;
 	}
 }
 
@@ -64,9 +77,6 @@
 	.tutor_right {
 		display: none;
 	}
-	.tutor_row {
-		flex-wrap: wrap;
-	}
 	.s-search {
 		padding-top: 135px;
 	}
@@ -87,7 +97,7 @@
 		padding: 10px 35px;
 		font-size: 14px;
 	}
-	.lang__heading, .trial_bold {
+	.text-sm_bold {
 		font-size: 14px;
 	}
 	.autoComplete_wrapper>input, .custom-select-opener, .custom-select-option, .autoComplete_wrapper > ul > li {

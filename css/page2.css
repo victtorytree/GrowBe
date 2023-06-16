@@ -379,7 +379,7 @@ body {
 	grid-template-columns: 1fr 1fr;
 	margin-bottom: 7px;
 }
-.trial_bold {
+.text-sm_bold {
 	font-size: 16px;
 	font-weight: 700;
 	color: #000;
@@ -441,6 +441,7 @@ body {
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	padding: 22px;
 	transition: transform 0.2s ease-in-out;
@@ -525,6 +526,7 @@ body {
 	line-height: 1.7;
 }
 .about__btn {
+	text-align: center;
 	margin-left: auto !important;
 	padding: 12px 20px;
 	margin-top: 10px;
