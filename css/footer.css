@@ -78,19 +78,6 @@ footer {
 .footer-arrow.rotate {
   transform: rotate(-180deg);
 }
-
-/*.footer-dropdown--mobile {
-    width: 100%;
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-    padding-top: 15px;
-    flex-direction: column;
-    z-index: 99;
-    background-color: #F2BF62;
-    margin-bottom: 0;
-}
-*/
 .footer__copyright {
   margin: 0 auto;
   padding-top: 10% ;
@@ -159,7 +146,7 @@ footer {
   .footer-column__list {
     display: none;
   }
-  .footer-column__list.show {
+  .footer-column__list--show {
     display: block;
   }
   .footer__heading {

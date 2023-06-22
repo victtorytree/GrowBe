@@ -1,19 +1,3 @@
-document.querySelector('.options').onclick = function(event) {
-	let target = event.target;
-	target.classList.toggle('options__item--active');
-}
-
-const header = document.querySelectorAll(".tutor_right .top");
-for (let i = 0; i < header.length; i++) {
-  header[i].addEventListener("click", function(event) {
-      let active = header[i].querySelector(".active");
-      if(active) {
-        active.classList.remove("active")
-      };
-      event.target.classList.add("active");
-  });
-};
-
 const lessons = [
   'English language',
   'Japanese language',
@@ -59,53 +43,80 @@ const names = [
 'Jason Hamsford',
 'Elena Duty',
 'Ezra Miantkovsky'
-  ]
+]
 
-const autoCompleteJS = new autoComplete({
-  selector: '#idLessons',
-  placeHolder: 'Lesson Name',
-  data: {
-    src: lessons,
-    cache: true,
-  },
-    resultItem: {
-    highlight: true,
-  },
-    events: {
-    input: {
-      selection: (event) => {
-        const selection = event.detail.selection.value;
-        autoCompleteJS.input.value = selection;
+window.addEventListener('DOMContentLoaded', function() {
+  // header search area handling
+    const searchOptionsDiv = document.querySelector('.options');
+    searchOptionsDiv.onclick = function(event) {
+      let el = event.target;
+      el.classList.toggle('options__item--orange');
+    };
+    searchOptionsDiv.onmouseover = function(event) {
+      event.target.classList.add("light");
+    }
+    searchOptionsDiv.onmouseout = function(event) {
+      event.target.classList.remove("light");
+    }
+    // tutor switchers
+    const header = document.querySelectorAll(".tutor_right .top");
+    for (let i = 0; i < header.length; i++) {
+      header[i].addEventListener("click", function(event) {
+          let active = header[i].querySelector(".active");
+          if(active) {
+            active.classList.remove("active")
+          };
+          event.target.classList.add("active");
+      });
+    };
+  // Lessons select
+    const autoCompleteLessonTop = new autoComplete({
+      selector: '#idLessons',
+      placeHolder: 'Lesson Name',
+      data: {
+        src: lessons,
+        cache: true,
       },
-    },
-  },
-  resultsList: {
-    maxResults: 15,
-  },
+        resultItem: {
+        highlight: true,
+      },
+        events: {
+        input: {
+          selection: (event) => {
+            const selection = event.detail.selection.value;
+            autoCompleteLessonTop.input.value = selection;
+          },
+        },
+      },
+      resultsList: {
+        maxResults: 15,
+      },
+    });
+    // Tutors select
+    const autoCompleteTeacherTop = new autoComplete({
+      selector: '#idTutor',
+      placeHolder: 'Tutor Name',
+      data: {
+        src: names,
+        cache: true,
+      },
+        resultItem: {
+        highlight: true,
+      },
+        events: {
+        input: {
+          selection: (event) => {
+            const selection = event.detail.selection.value;
+            autoCompleteTeacherTop.input.value = selection;
+          },
+        },
+      },
+      resultsList: {
+        maxResults: 15,
+      },
+    });
+    // Custom select
+    customSelect('.search-block__select');
 });
 
-const autoCompleteJS2 = new autoComplete({
-  selector: '#idTutor',
-  placeHolder: 'Tutor Name',
-  data: {
-    src: names,
-    cache: true,
-  },
-    resultItem: {
-    highlight: true,
-  },
-    events: {
-    input: {
-      selection: (event) => {
-        const selection2 = event.detail.selection.value;
-        autoCompleteJS2.input.value = selection2;
-      },
-    },
-  },
-  resultsList: {
-    maxResults: 15,
-  },
-});
 
-// Custom select
-customSelect('.search-block__select');

@@ -14,15 +14,17 @@ window.addEventListener('scroll', function () {
 	}
 });
 
-function dropdown() {
-  const selectItem = document.querySelectorAll(".footer-arrow");
-  const selectList = document.querySelectorAll(".footer-column__list");
-  selectItem.forEach((item, i) => {
-      item.addEventListener("click", (event) => {
-      selectList[i].classList.toggle("show");
-      item.classList.toggle("rotate");
-    });
-  });
-}
+window.addEventListener('load', function () {
+	const footerEls = document.querySelectorAll(".footer-column__list");
+	const footerItems = document.querySelectorAll(".footer-arrow");
+	footerItems.forEach((item, i) => {
+			item.addEventListener("click", (event) => {
+			footerEls[i].classList.toggle("footer-column__list--show");
+			item.classList.toggle("rotate");
+		});
+	});
+});
 
-dropdown();
+
+
+
