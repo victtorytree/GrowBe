@@ -1,0 +1,14 @@
+@media (max-width: 1200px) {
+	.website__img {
+		width: 50%;
+		margin-right: -25px;
+		margin-top: 0;
+	}
+	.question__flex {
+		align-items: center;
+	}
+	.question__pic {
+		width: 60%;
+		margin-top: 0;
+	}
+}
