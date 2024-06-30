@@ -4,10 +4,10 @@
 		margin-right: -25px;
 		margin-top: 0;
 	}
-	.question__flex {
+	.s-what__all {
 		align-items: center;
 	}
-	.question__pic {
+	.s-what__img {
 		width: 60%;
 		margin-top: 0;
 	}
@@ -21,7 +21,7 @@
 	.website__flex {
 		padding-bottom: 50px;
 	}
-	.question__column {
+	.s-what__text {
 		max-width: 480px;
 	}
 	.h1 {
@@ -47,7 +47,7 @@
 	.numbers__element {
 		font-size: 50px;
 	}
-	.s-intro__flex {
+	.s-intro__all {
 		column-gap: 20px;
 		padding-bottom: 0;
 		padding-top: 120px;
@@ -72,21 +72,22 @@
 }
 
 @media (max-width: 992px) {
-	#logos {
+	.brand-logos {
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 20px;
 	}
-	.s-solution__flex {
+	.s-solution__all {
 		padding-bottom: 30px;
 	}
 	/* --Header--	*/
-	.navigation__list {
+	.nav-t__list  {
 		width: 0;
 		visibility: hidden;
 	}
 	.menu-button {
 		display: flex;
+		align-items: center;
 	}
 	.header {
 		column-gap: 20px;
@@ -103,7 +104,7 @@
 	}
 	/* //Header	*/
 
-	.question__column {
+	.s-what__text {
 		width: 80%;
 		max-width: 370px;
 	}
@@ -168,7 +169,7 @@
 		font-size: 13px;
 		padding: 0 15px;
 	}
-	#logos {
+	.brand-logos {
 		padding: 60px 0;
 	}
 	.s-why {
@@ -256,7 +257,8 @@
 		padding: 5px 0;
 	}
 	/* //Footer	*/
-	.s-why__row {
+
+	.s-why__all {
 		flex-wrap: wrap;
 		column-gap: 15px;
 	}
@@ -282,7 +284,7 @@
 	.h2 {
 		font-size: 28px;
 	}
-	.website__flex, .question__flex, .options__body, .s-intro__flex, .s-solution__flex {
+	*[class$="__all"] {
 		flex-wrap: wrap;
 	}
 	.website__img {
@@ -291,19 +293,19 @@
 	.s-column {
 		flex-basis: 90%;
 	}
-	.s-picture {
+	.s-intro__picture, .s-solution__picture {
 		margin-top: 50px;
 		width: 70%;
 	}
-	.question__pic {
+	.s-what__image {
 		margin-left: 0;
 	}
-	.question__column {
+	.s-what__text {
 		margin-right: 0;
 		max-width: unset;
 		width: 100%;
 	}
-	.question {
+	.s-what {
 		padding-top: 30px;
 	}
 	.btn {
@@ -402,14 +404,14 @@
 	.footer__copyright {
 		font-size: 12px;
 	}
-	.s-picture {
+	.s-intro__picture, .s-solution__picture {
 		width: 100%;
 	}
-	.question__pic {
+	.s-what__image {
 		width: 100%;
 		margin-left: -25px;
 	}
-	.s-intro__flex .s-picture {
+	.s-intro__picture {
 		margin-left: 30px;
 	}
 	.btn {

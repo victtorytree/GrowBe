@@ -20,13 +20,13 @@
 			    </a> 
 			    <nav class="header__nav nav-t">
 					<div class="nav-t__list">
-						<a href="#" class="nav-top__link">Home</a>
-						<a href="#" class="nav-top__link">About Us</a>
-						<a href="#" class="nav-top__link">Services</a>
-						<a href="#" class="nav-top__link nav-top--drop">Features</a>
-						<a href="#" class="nav-top__link">Team</a>
-						<a href="#" class="nav-top__link">Blog</a>
-						<a href="#" class="nav-top__link">Contact</a>
+						<a href="index.html" class="nav-top__link">Home</a>
+						<a href="#about" class="nav-top__link">About Us</a>
+						<a href="#options" class="nav-top__link">Services</a>
+						<a href="#why" class="nav-top__link nav-top--drop">Features</a>
+						<a href="#team" class="nav-top__link">Team</a>
+						<a href="#news" class="nav-top__link">Blog</a>
+						<a href="#footer" class="nav-top__link">Contact</a>
 					</div>
 			    	<button class="menu-button">
 			    		<img src="img/icons/bars.svg" alt="menu">
@@ -34,8 +34,8 @@
 			    </nav>
 			    <button class="btn btn--main">Get Started</button>
 		    </header>
-			<div class="s-intro__flex">
-				<div class="s-column">
+			<div class="s-intro__all fl-c">
+				<div class="s-intro__text s-column">
 					<h1 class="h1">SEO & Digital <span class="h1__text">Marketing</span> For Your Website.</h1>
 					<p class="s-intro__subtitle">Provide all kind of seo services and help to improve seo ranking. Globally incubate standards.</p>
 					<div class="s-intro__btns">
@@ -46,41 +46,41 @@
 					</div>
 					</div>
 				</div>
-				<div class="s-picture">
-					<img src="img/header/Image.png" alt="main picture">
+				<div class="s-intro__picture">
+					<img src="img/header/Image.png" alt="process picture">
 				</div>
 			</div>
-			<article id="logos">
-				<img src="img/logos/1.png" alt="brand1" class="logos__brand">
-				<img src="img/logos/2.png" alt="brand1" class="logos__brand">
-				<img src="img/logos/3.png" alt="brand1" class="logos__brand">
-				<img src="img/logos/4.png" alt="brand1" class="logos__brand">
-				<img src="img/logos/5.png" alt="brand1" class="logos__brand">
-				<img src="img/logos/6.png" alt="brand1" class="logos__brand">
-			</article>
+			<div class="s-intro__logos brand-logos">
+				<img src="img/logos/1.png" alt="partner brand logo" class="brand-logos__img">
+				<img src="img/logos/2.png" alt="partner brand logo" class="brand-logos__img">
+				<img src="img/logos/3.png" alt="partner brand logo" class="brand-logos__img">
+				<img src="img/logos/4.png" alt="partner brand logo" class="brand-logos__img">
+				<img src="img/logos/5.png" alt="partner brand logo" class="brand-logos__img">
+				<img src="img/logos/6.png" alt="partner brand logo" class="brand-logos__img">
+			</div>
 
 		</div>
 	</section>
 	<!-- //s-intro -->
 
-	<section class="s-solution">
+	<section id="about" class="s-solution">
 		<div class="container">
-			<div class="s-solution__flex">
+			<div class="s-solution__all fl-c">
 				<div class="s-column">
 					<h2 class="s-solution__title h2">Perfect Solution For Your Business</h2>
 					<p class="s-text">Distinctively exploit optimal alignments for intuitive bandwidth. Quickly coordinate e-business applications through revolutionary catalysts for chang the Seamlessly underwhelm optimal testing procedures.</p>
 					<a href="#!" class="btn intro--btn second--btn">Learn More</a>
 				</div>
-				<div class="s-picture">
+				<div class="s-solution__picture">
 					<img src="img/main/Mockup.png" alt="macbook">
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- //s-solution -->
-	<section class="options">
+	<section id="options" class="options">
 		<div class="container">
-			<div class="options__body">
+			<div class="options__all">
 				<div class="options__card">
 				<div class="options__icon">
 					<img src="img/icons/icon1.svg" alt="logo">
@@ -109,11 +109,11 @@
 		</div>
 	</section>
 	<!-- //options -->
-	<section class="s-why">
+	<section id="why" class="s-why">
 		<div class="container">
 			<h2 class="h2">Why You Should Choose Us.</h2>
 			<p class="s-text s-why__subtitle">Distinctively exploit optimal alignments for intuitive bandwidth. Quickly coordinate e-business applications through revolutionary catalysts.</p>
-			<div class="s-why__row">
+			<div class="s-why__all fl-c">
 				<div class="s-why__card">
 					<img src="img/s-card/01.png" alt="picture" class="s-why__img">
 					<h4 class="h4">Keyword Research</h4>
@@ -137,16 +137,16 @@
 	</section>
 	<!-- //s-why -->
 
-	<section class="question">
+	<section class="s-what">
 		<div class="container">
-			<div class="question__flex">
-				<div class="question__pic">
+			<div class="s-what__all">
+				<div class="s-what__image">
 			        <img src="img/main/compas.jpg" alt="">
 		        </div>
-				<div class="question__column">
-					<h2 class="h2 question__title">You may ask what<br> SEO & why do you need it?</h2>
+				<div class="s-what__text">
+					<h2 class="h2 s-what__title">You may ask what<br> SEO & why do you need it?</h2>
 					<p class="s-text">Distinctively exploit optimal alignments for intuitive bandwidth. Quickly coordinate e-business applications through revolutionary.</p>
-					<ul class="question__list">
+					<ul class="s-what__list">
 						<li class="list__item">
 							<img class="list__icon" src="img/icons/globe.svg" alt="icon">
 							<div class="list__content">
@@ -258,7 +258,7 @@
 		</div>
 	</section>
 	<!-- //s-plans -->
-	<section class="s-experts">
+	<section id="team" class="s-experts">
 		<div class="container">
 			<h2 class="h2">Our Expert Team Members</h2>
 			<p class="s-text s-experts__subtitle">This new-found knowledge may then be used by engineers to create new tools and machines.</p>
@@ -383,7 +383,7 @@
 	</section>
 	<!-- //section -->
 
-	<section class="s-news">
+	<section id="news" class="s-news">
 		<h2 class="h2">Our Latest News</h2>
 		<p class="s-text s-news__subtitle">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
 Curae Suspendisse ante arcu, consectetur id nisl eget.</p>
@@ -496,7 +496,7 @@ Curae Suspendisse ante arcu, consectetur id nisl eget.</p>
 	</section>
 	<!-- //section -->
 
-	<footer class="footer">
+	<footer id="footer" class="footer">
 		<div class="container">
 			<div class="footer__body">
 				<div class="footer__main">
