@@ -1,0 +1,105 @@
+@media (max-width: 1120px) {
+	.tutor__trial {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+	.tutor__trial :nth-child(2n) {
+		  order: 0;
+		}
+	.tutor__trial :last-of-type {
+	  text-align: center;
+	}
+	.resume__flex {
+		flex-wrap: wrap;
+	}
+	.info__row {
+		flex-wrap: wrap;
+	}
+	.info__col .h3 {
+		font-size: 16px;
+	}
+	.tutor_lessons__link, .students__text {
+		font-size: 14px;
+	}
+	.schedule__week, .schedule__timezone .custom-select-opener {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 992px) {
+	.container-flex {
+		flex-wrap: wrap;
+		padding-top: 130px;
+	}
+	.block_right {
+		display: none;
+	}
+	.block_left {
+		width: 80%;
+	}
+	.block {
+		padding: 17px;
+	}
+	.info {
+		column-gap: 20px;
+		margin-bottom: 10px;
+	}
+	.tutor-nav {
+		flex-wrap: wrap;
+		margin: 20px;
+		row-gap: 12px;
+	}
+	.h3 {
+		font-size: 18px;
+	}
+	.info__picture {
+		width: 60%;
+	}
+	.info__col {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.info__col::after {
+		margin-top: 20px;
+	}
+	.row_bottom {
+		display: none;
+	}
+}
+
+@media (max-width: 576px) {
+	.block_left {
+		width: 100%;
+	}
+	.tutor__name {
+		font-size: 18px;
+	}
+	.schedule__table {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		column-gap: 10px;
+	}
+	.schedule__day {
+		width: 21%;
+	}
+	.schedule__date {
+		flex-wrap: wrap;
+		row-gap: 8px;
+	}
+	.schedule__switch-before, .schedule__switch-next {
+		padding: 8px 12px;
+	}
+	.block-btn {
+		font-size: 15px;
+		padding: 7px 20px;
+	}
+	.resume__flex {
+		display: none;
+	}
+	.resume--mobile {
+	  display: flex;
+	  justify-content: space-between;
+	  margin-top: 15px;
+	}
+}
